@@ -1,0 +1,8 @@
+<ul>
+  {{#each model as |legislator|}}
+    <li> {{legislator.first_name}} {{legislator.last_name}}<br>Contact:           <a href= {{legislator.contact_form}} target='blank'>{{legislator.contact_form}}
+    </a>
+    <!-- target='blank' makes a new tab off current page link-->
+    </li>
+  {{/each}}
+</ul>
