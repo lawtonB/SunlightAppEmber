@@ -1,0 +1,7 @@
+{{#if model}}
+{{#each model as |jointsubcommittee|}}
+  <li> {{jointsubcommittee.name}}</li>
+{{/each}}
+{{else}}
+<p>This committee has no subcommittees</p>
+{{/if}}

@@ -1,4 +1,15 @@
-
-{{#each model as |committee|}}
-  {{#link-to 'subcommittee' committee.committee_id}}<li> {{committee.name}} </li>{{/link-to}}
+<h1>House Committees</h1>
+{{#each model.house as |committee|}}
+  {{#link-to 'subcommittee' committee.committee_id}}
+    <li> {{committee.name}} </li>
+    {{log committee.committee_id}}
+  {{/link-to}}
+{{/each}}
+<h1>Senate Committees</h1>
+{{#each model.senate as |committee|}}
+  {{#link-to 'senatesubcommittee' committee.committee_id}}<li> {{committee.name}} </li>{{/link-to}}
+{{/each}}
+<h1>Joint Committees</h1>
+{{#each model.joint as |committee|}}
+  {{#link-to 'jointsubcommittee' committee.committee_id}}<li> {{committee.name}} </li>{{/link-to}}
 {{/each}}

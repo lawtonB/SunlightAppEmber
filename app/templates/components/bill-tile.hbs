@@ -1,0 +1,11 @@
+<h3>{{bill.official_title}}</h3>
+{{#if showMore}}
+ <ul>
+   <li>Sponsor: {{bill.sponsor.first_name}} {{bill.sponsor.last_name}}</li>
+   <li>Date Introduced: {{bill.introduced_on}}</li>
+   <li> <a href={{bill.urls.govtrack}} target='blank'>Link</a></li>
+ </ul>
+ <button {{action "hideDetails"}}>Hide Details</button>
+{{else}}
+  <button {{action "showDetails"}}>Show Details</button>
+{{/if}}
