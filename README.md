@@ -1,7 +1,6 @@
 # Legislator-lookup
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This project demonstrates the use the Sunlight API key in the context of a ember project. The site allows a user to examine the current active bill in the house and senate and provide contact information for senators by zip code. 
 
 ## Prerequisites
 
